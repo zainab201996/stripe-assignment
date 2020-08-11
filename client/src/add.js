@@ -16,7 +16,7 @@ class AddCoupon extends React.Component {
     let d=this.state.duration;
     let dm=this.state.durationInMonths;
     let p=this.state.percent;
-    fetch('http://localhost:9000/add/'+d+'/'+dm+'/'+p)
+    fetch('http://localhost:5000/add/'+d+'/'+dm+'/'+p)
     .then(res=>res.text())
     .then(res=>{
     alert(res);
