@@ -12,7 +12,7 @@ class RemoveCoupon extends React.Component {
   mySubmitHandler = (event) => {
     event.preventDefault();
     let id=this.state.id;
-    fetch('http://localhost:5000/delete/'+id)
+    fetch('https://stripe-assignment.herokuapp.com/delete/'+id)
     .then(res=>res.text())
     .then(res=>{
     alert(res);

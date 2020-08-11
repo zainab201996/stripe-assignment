@@ -8,7 +8,7 @@ class Coupon extends React.Component {
     this.state={couponList:[]};
   }
   callApi(){
-    fetch('http://localhost:5000/view')
+    fetch('https://stripe-assignment.herokuapp.com/view')
     .then(res=>res.json())
     .then(res=>{
       //console.log(res[0].id);
