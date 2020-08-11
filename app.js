@@ -136,6 +136,6 @@ app.use(function(err, req, res, next) {
 
 
 
-server.listen(port);
+server.listen(port,console.log(`Server is starting at ${port}`));
 server.on('error', onError);
 server.on('listening', onListening);
